@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AppLoginComponent } from './app-login.component';
-import { AppLoginRoutingModule } from './app-login.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from '../auth.service';
 
@@ -11,7 +10,6 @@ import { AuthService } from '../auth.service';
   imports: [
     FormsModule,
     CommonModule,
-    AppLoginRoutingModule,
     ReactiveFormsModule
   ],
   declarations: [
