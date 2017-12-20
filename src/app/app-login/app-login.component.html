@@ -1,0 +1,9 @@
+
+<div>
+  <form [formGroup]="form" (ngSubmit)="login(form.value)">
+    UserName: <input type="text" formControlName="username"><br><br>
+    PassWord: <input type="password" formControlName="password"><br>
+    <button type="submit">LOGIN</button>
+  </form>
+  <div *ngIf="(userData$ | async)">{{ (userData$ | async) ["loaded"]  }}</div>
+</div>
