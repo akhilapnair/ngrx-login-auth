@@ -16,7 +16,7 @@ export class AuthService {
   login(user: User) {
     if (user.username === 'admin' && user.password === 'admin' ) { // {3}
       this.loggedIn.next(true);
-      this.router.navigate(['/']);
+      this.router.navigate(['/home']);
       console.log('Login Successfully');
     } else {
         console.log('Login error');
